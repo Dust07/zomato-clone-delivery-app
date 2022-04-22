@@ -1,10 +1,10 @@
 import React from 'react'
 import "./style.scss"
 
-const index = () => {
+const Nightlife = () => {
   return (
-    <div>index</div>
+    <div>Nightlife</div>
   )
 }
 
-export default index
+export default Nightlife
