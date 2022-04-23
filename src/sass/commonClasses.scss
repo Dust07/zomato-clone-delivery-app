@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .max-width {
   max-width: 1100px;
   margin: 0px auto;
@@ -11,4 +13,11 @@
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.collection-title {
+  font-size: 30px;
+  color: $heading-text;
+  margin-bottom: 32px;
+  font-weight: 600;
 }
