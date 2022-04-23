@@ -1,9 +1,14 @@
 import React from 'react'
+import Filter from '../filter'
 import "./style.scss"
 
 const Delivery = () => {
   return (
-    <div>Delivery</div>
+    <div>
+      <div className="max-width">
+        <Filter />
+      </div>
+    </div>
   )
 }
 

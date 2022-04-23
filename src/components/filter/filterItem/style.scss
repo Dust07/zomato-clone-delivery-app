@@ -1,0 +1,17 @@
+@import "../../../sass/variables.scss";
+
+.filter-item {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background-color: $primary-bg;
+  color: $filter-text;
+  border: 0.5px solid $zomato-grey;
+  border-radius: 8px;
+  margin: 10px 10px 10px 0;
+  font-size: 14px;
+}
+
+.filter-title {
+  margin-left: 8px;
+}
