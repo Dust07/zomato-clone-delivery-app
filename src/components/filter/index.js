@@ -3,11 +3,11 @@ import FilterItem from './filterItem'
 import "./style.scss"
 const filterList = [
   {
-    icon: <i class="fi fi-rr-settings-sliders absolute-center"></i>,
+    icon: <i className="fi fi-rr-settings-sliders absolute-center"></i>,
     title: "Filters"
   },
   {
-    icon: <i class="fi fi-rr-truck-side absolute-center"></i>,
+    icon: <i className="fi fi-rr-truck-side absolute-center"></i>,
     title: "Delivery time"
   },
   {
@@ -29,8 +29,8 @@ const Filter = () => {
     <div className="filter">
       {filterList && filterList.map((filter, index) => {
         return (
-          <div>
-            <FilterItem filter={filter} key={index} />
+          <div key={index}>
+            <FilterItem filter={filter} />
           </div>
         )
       })}

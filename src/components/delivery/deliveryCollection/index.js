@@ -72,8 +72,8 @@ const DeliveryCollection = () => {
       <div className="max-width">
         <div className="collection-title">Inspiration for your first order</div>
         <Slider {...settings}>
-          {deliveryCollection.map((item) => {
-            return <DeliveryItem item={item} />
+          {deliveryCollection.map((item, index) => {
+            return <DeliveryItem item={item} key={index} />
           })}
         </Slider>
       </div>

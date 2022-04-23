@@ -1,4 +1,8 @@
 import React from 'react'
+import Slider from 'react-slick/lib/slider';
+import NextArrow from '../carousel/NextArrow';
+import PrevArrow from '../carousel/PrevArrow';
+import BrandItem from './brandItem'
 
 const brandList = [
   {
@@ -43,9 +47,26 @@ const brandList = [
   },
 
 ]
+const settings = {
+  infinite: false,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  nextArrow: <NextArrow />,
+  prevArrow: <PrevArrow />
+};
+
 const TopBrands = () => {
   return (
-    <div>TopBrands</div>
+    <div>
+      <div className="max-width">
+        <div className="collection-title">Top brands for you</div>
+        <Slider {...settings}>
+          {brandList.map((brand, index) => {
+            return <BrandItem brand={brand} key={index} />
+          })}
+        </Slider>
+      </div>
+    </div>
   )
 }
 

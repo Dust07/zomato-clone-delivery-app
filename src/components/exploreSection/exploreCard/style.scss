@@ -1,0 +1,155 @@
+@import "../../../sass/variables.scss";
+
+.explore-card {
+  margin: 12px 0 24px 0px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+}
+.explore-card:hover {
+  background-color: $primary-bg;
+  border: 1px solid $border-white;
+}
+
+.explore-card-cover {
+  height: 248px;
+  width: 328px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.explore-card-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.delivery-time {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  opacity: 0.8;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 5px 3px;
+  border-radius: 4px;
+  background: $primary-bg;
+}
+
+.pro-off {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  background-color: $tag-red;
+  color: $primary-bg;
+  font-size: 14px;
+  padding: 0px 6px;
+  border-radius: 0 2px 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.discount {
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  background-color: $tag-blue;
+  color: $primary-bg;
+  font-size: 14px;
+  padding: 0px 6px;
+  border-radius: 0 2px 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.gold-off {
+  position: absolute;
+  left: 0;
+  bottom: 14px;
+  background-color: $tag-red;
+  color: $primary-bg;
+  font-size: 14px;
+  padding: 0px 6px;
+  border-radius: 0 2px 2px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.item-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0 6px;
+}
+
+.item-name {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 18px;
+  font-weight: 600;
+  color: $heading-text;
+}
+
+.item-rating {
+  padding: 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: $primary-bg;
+  background-color: $tag-green;
+  border-radius: 6px;
+  height: 24px;
+}
+
+.item-rating i {
+  font-size: 10px;
+  margin-left: 2px;
+}
+
+.item-cuisine {
+  max-width: 56%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.item-cuisine-tag {
+  margin-right: 4px;
+  color: $inactive-text;
+}
+
+.item-price {
+  font-size: 14px;
+  color: $inactive-text;
+}
+
+.explore-bottom {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
+.item-bottom-text {
+  font-size: 12px;
+  color: $inactive-text;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-left: 8px;
+}
+
+.card-separator {
+  height: 1px;
+  margin: 10px 0 5px 0;
+  background-color: $border-white;
+}

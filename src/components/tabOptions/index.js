@@ -28,9 +28,10 @@ const TabOptions = ({ activeTab, setActiveTab }) => {
   return (
     <div className="tab-options">
       <div className="max-width options-wrapper">
-        {tabs.map((tab) => {
+        {tabs.map((tab, index) => {
           return (
             <div
+              key={index}
               onClick={() => setActiveTab(tab.name)}
               className={`tab-item absolute-center cursor-pointer ${activeTab === tab.name && "active-tab"}`}
             >
