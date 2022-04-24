@@ -2,7 +2,7 @@ import React from 'react'
 import "./style.scss"
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div className="absolute-center">Clone version of Zomato - built for study purposes.</div>
   )
 }
 
