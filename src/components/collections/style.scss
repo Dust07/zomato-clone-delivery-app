@@ -1,0 +1,68 @@
+@import "../../sass/variables.scss";
+
+.collections-wrapper {
+  background-color: $inactive-color;
+}
+
+.collections {
+  padding: 15px 0 40px;
+}
+
+.collections-subtitle-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.collections-subtitle-text {
+  color: $subtitle-text;
+  font-size: 18px;
+}
+
+.collections-location {
+  color: $zomato-red;
+  display: flex;
+}
+
+.collections-cover {
+  height: 320px;
+  width: 260px;
+  margin-right: 20px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.gradient-bg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background: $bg-gradient;
+}
+
+.collections-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.collections-card-title {
+  position: absolute;
+  left: 16px;
+  bottom: 30px;
+  font-size: 18px;
+  color: $primary-bg;
+}
+
+.collections-card-places {
+  display: flex;
+  position: absolute;
+  left: 16px;
+  bottom: 10px;
+  font-size: 14px;
+  color: $primary-bg;
+}
